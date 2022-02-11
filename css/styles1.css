@@ -1,0 +1,571 @@
+:root{
+
+	/* COLORS */
+	--bgcolor: #222222;
+	--maximumRed: #E50914;
+	--redPigment: #F40612;
+	--white: #FFFFFF;
+	--black: #000000;
+	--silverChalice: #AAAAAA;
+	--sonicSilver: #757575;
+	--dimGray: #6A6A6A;
+	--onyx: #404040;
+	--jet: #303030;
+	--brightNavyBlue: #0071EB;
+
+	/* FONTS */
+	--NSBlack: 'NetflixSansBlack';
+	--NSBold: 'NetflixSansBold';
+	--NSIcon: 'NetflixSansIcon';
+	--NSLight: 'NetflixSansLight';
+	--NSMedium: 'NetflixSansMedium';
+	--NSRegular: 'NetflixSansRegular';
+	--NSThin: 'NetflixSansThin';
+
+}
+
+@font-face {
+	font-family: 'NetflixSansBlack';
+	src: url('../assets/fonts/NetflixSansBlack.ttf');
+}
+@font-face {
+	font-family: 'NetflixSansBold';
+	src: url('../assets/fonts/NetflixSansBold.ttf');
+}
+@font-face {
+	font-family: 'NetflixSansIcon';
+	src: url('../assets/fonts/NetflixSansIcon.ttf');
+}
+@font-face {
+	font-family: 'NetflixSansLight';
+	src: url('../assets/fonts/NetflixSansLight.ttf');
+}
+@font-face {
+	font-family: 'NetflixSansMedium';
+	src: url('../assets/fonts/NetflixSansMedium.ttf');
+}
+@font-face {
+	font-family: 'NetflixSansRegular';
+	src: url('../assets/fonts/NetflixSansRegular.ttf');
+}
+@font-face {
+	font-family: 'NetflixSansThin';
+	src: url('../assets/fonts/NetflixSansThin.ttf');
+}
+
+html{
+	box-sizing: border-box;
+}
+
+body{
+	font-family: var(--NSRegular);
+	color: var(--white);
+	background-color: var(--bgcolor);
+}
+
+/* GLOBALS */
+
+a{
+	text-decoration: none;
+}
+
+h1{
+	font-size: 3.2rem;
+	letter-spacing: -.05rem;
+	margin-top: 8.5rem;
+	margin-bottom: 0;
+}
+
+h2{
+	font-family: var(--NSMedium);
+	font-size: 3rem;
+}
+
+h3{
+	font-size: 1.6rem;
+	font-family: var(--NSThin);
+	padding: .8rem 0;
+}
+
+
+/* UTILITIES */
+.noMargin{
+	margin: 0;
+}
+
+
+/* HEADER */
+
+.header{
+	background: linear-gradient(to bottom, rgba(0, 0, 0, .9) -5%, rgba(0, 0, 0, 0) 100%), linear-gradient(to top, rgba(0, 0, 0, .9) -15%, rgba(0, 0, 0, 0) 80%),url("../assets/img/hero.jpg");
+	height: 100vh;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	text-align: center;
+}
+
+.bar{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: .7rem 2.5rem;
+}
+
+.logo{
+	width: 10.5rem;
+	margin-right: 52rem;
+}
+
+.logo img{
+	width: 100%;
+	opacity: .83;
+}
+
+.fa-globe{
+	font-size: .8rem;
+	transform: none;
+	position: absolute;
+	right: 16rem;
+}
+
+select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+
+.select-lenguage{
+	height: 2.1rem;
+	width: 6.5rem;
+	background-color: rgba(100, 100, 100, 0);
+	font-size: .87rem;
+	border: .1rem solid var(--silverChalice);
+	color: var(--white);
+	text-align: center;
+	z-index: 2;
+}
+
+.fa-caret-down{
+	position: absolute;
+	right: 11.4rem;
+}
+
+
+option{
+	color: var(--white);
+	font-size: 1rem;
+	font-family: var(--NSRegular);
+}
+
+.sign-in-btn{
+	background-color: var(--maximumRed);
+	border-radius: .2rem;
+	margin-right: 1rem;
+}
+
+.sign-in-btn div{
+	padding: .5rem 1.1rem;
+	color: var(--white);
+
+}
+
+p{
+	font-size: 1.2rem;
+}
+
+.get-started{
+	display: flex;
+	justify-content: center;
+}
+
+.get-started input{
+	height: 3.2rem;
+	width: 27.4rem;
+	padding-left: .5rem;
+}
+
+.get-started button{
+	background-color: var(--maximumRed);
+	border: 0;
+	color: var(--white);
+	padding: .7rem 1.6rem;
+	font-size: 1.6rem;
+	border-top-right-radius: .1rem;
+	border-bottom-right-radius: .1rem;
+}
+
+.get-started button:hover{
+	background-color: var(--redPigment);
+	cursor: pointer;
+}
+
+.fa-chevron-right{
+	position: relative;
+	top: -.1rem;
+	font-size: 1.2rem;
+	padding-left: .5rem
+}
+
+/* SECTIONS */
+
+/* ENJOY SECTION */
+
+section{
+	display: flex;
+	margin: .5rem 0;
+	background-color: var(--black);
+	height: 29.2rem;
+}
+
+.description-section{
+	display: flex;
+	flex-direction: column;
+	width: 48.66%;
+	padding: 9rem 8rem 0 7.7rem;
+}
+
+.description-section p{
+	font-size: 1.6rem;
+	line-height: 1.3;
+}
+
+.enjoy-section img{
+	position: relative;
+	width: 33rem;
+	height: 25rem;
+	right: 6.2rem;
+	top: .8rem;
+	z-index: 1;
+}
+
+.enjoy-section video{
+	position: absolute;
+	width: 24rem;
+	margin-top: 5.9rem;
+	right: 10.8rem;
+}
+
+/* DOWNLOAD SECTION */
+
+.mobile-image{
+	width: 33rem;
+	height: 25rem;
+}
+
+.downloading{
+	position: absolute;
+	z-index: 1;
+	left: 5.88rem;
+	top: 91.7rem;
+	width: 12rem;
+	height: 5.7rem;
+	background-color: var(--black);
+	border: .15rem solid var(--onyx);
+	border-radius: .7rem;
+	box-shadow: 0 0 2rem .8rem var(--black);
+	display: flex;
+}
+
+.downloading p{
+	position: absolute;
+	left: 5rem;
+	bottom: .7rem;
+	width: 100%;
+	font-family: var(--NSMedium);
+	font-size: 1rem;
+}
+
+.downloading span{
+	font-family: var(--NSThin);
+	color: var(--brightNavyBlue);
+	font-size: .96rem;
+}
+
+.downloading-gift{
+	position: absolute;
+	width: 3rem;
+	right: .7rem;
+	bottom: 1.5rem;
+}
+
+.small-cover{
+	position: relative;
+	width: 3.3rem;
+	height: 4.6rem;
+	bottom: -.5rem;
+	left: -8.3rem;
+}
+
+.download-section h2,
+.download-section p{
+	width: 32rem;
+}
+
+
+
+/* WATCH EVERYWHERE SECTION */
+
+.watch-everywhere p{
+	width: 80%;
+}
+
+.watch-everywhere-video{
+	width: 20.3rem;
+}
+
+.watch-everywhere video{
+	position: relative;
+	top: 4.7rem;
+	right: 4rem;
+	width: 100%;
+}
+
+.watch-everywhere img{
+	width: 33rem;
+	z-index: 1;
+	position: absolute;
+	right: 4.6rem;
+	top: 105.3rem;
+}
+
+/* PROFILE KIDS SECTION */
+
+.profile-kids img{
+	scale: 75%;
+}
+
+.profile-kids div{
+	padding-left: 3.2rem;
+}
+.download-section div{
+	padding-left: 9.2rem;
+	padding-right: 0;
+}
+
+.profile-kids p{
+	width: 33rem;
+}
+
+/* FAQS SECTION */
+
+.faqs-section{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: auto;
+	padding-bottom: 5rem;
+}
+
+.faqs-section h2{
+	padding-top: 2rem;
+}
+
+ul{
+	width: 52rem;
+}
+
+
+li{
+	margin-top: .5rem;
+	list-style-type: none;
+	background-color: var(--jet);
+	padding: 1.4rem 1.7rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 1.6rem;
+	border-bottom: .1rem solid var(--black);
+	cursor: pointer;
+}
+
+.fa-plus{
+	position: relative;
+}
+
+.answer{
+	font-size: 1.6rem;
+	padding: 1.4rem 1.7rem;
+	background-color: var(--jet);
+}
+
+.hidden{
+	display: none;
+}
+
+/* FOOTER */
+
+.footer{
+	background-color: var(--black);
+	padding: 5rem 14rem 3rem;
+	color: var(--sonicSilver);
+}
+
+.nav-footer{
+	display: flex;
+}
+
+.footer p{
+	font-size: 1rem; 
+	margin: 1rem 0;
+}
+
+.nav-footer div{
+	display: flex;
+	flex-direction: column;
+	margin-right: 7.4rem;
+}
+
+.nav-footer a{
+	color: var(--sonicSilver);
+	font-size: .8rem;
+	margin: .6rem 0;
+
+}
+
+.select-lenguage__footer{
+	position: relative;
+	left: -1.2rem;
+	height: 3.1rem;
+	width: 9rem;
+	background-color: rgba(100, 100, 100, 0);
+	font-size: 1rem;
+	border: .1rem solid var(--dimGray);
+	color: var(--dimGray);
+	text-align: center;
+	z-index: 2;
+	margin-top: 1rem;
+}
+
+.footer-lenguage .fa-globe{
+	position: relative;
+	left: 1.2rem;
+	font-size: 1rem;
+
+}
+
+.footer-lenguage .fa-caret-down{
+	position: relative;
+	font-size: 1.2rem;
+	left: -2.8rem;
+}
+
+.country{
+	padding-top: 1.7rem;
+}
+
+
+/* RESPONSIVE DESIGN */
+
+
+/* ESCRITORIO MEDIANO O TABLET HORIZONTAL | 1024px */
+@media (max-width: 1199px) and (min-width: 992px){
+
+	/* HEADER */
+	.logo{
+		margin-right: 0;
+	}
+
+	.select-lenguage{
+		margin-left: 31.7rem;
+	}
+
+	/* ENJOY SECTION */
+	.enjoy-section .description-section{
+		padding: 7.5rem 0 0 2.6rem ;
+	}
+
+	.enjoy-section p{
+		width: 90%;
+	}
+
+	.enjoy-section-video{
+		position: relative;
+		right: 0rem;
+	}
+
+	.enjoy-section-video video{
+		width: 21rem;
+		right: 5.1rem;
+		top: 1rem;
+	}
+
+	.enjoy-section-video img{
+		right: 1rem;
+		top: 2.5rem;
+		width: 29rem;
+		height: auto;
+	}
+
+	/* DOWNLOAD SECTION */
+
+	.download-section .description-section{
+		padding: 7.5rem 0 0 0;
+	}
+
+	.mobile-image{
+		width: 28rem;
+		height: 20rem;
+		padding-top: 3rem;
+		padding-left: 1.5rem;
+	}
+
+	.downloading{
+		margin-top: 3rem;
+		width: 10rem;
+		height: 5.7rem;
+	}
+
+	/* WATCH EVERYWHERE SECTION */
+	.watch-everywhere .description-section{
+		padding: 7.5rem 5.2rem 0 2.6rem;
+	}
+
+	.watch-everywhere-video video{
+		width: 91%;
+	}
+
+	.watch-everywhere-video img{
+		width: 30rem;
+		padding-top: 5.4rem;
+
+	}
+
+	/* PROFILE KIDS SECTION */
+	.profile-kids img{
+		width: 34rem;
+		height: 26rem;
+		padding-top: 1.7rem;
+	}
+	.profile-kids .description-section{
+		padding: 6.5rem 0 0 0;
+		position: relative;
+		right: 2rem;
+	}
+
+	.description-section p{
+		width: 90%;
+	}
+
+	/* FAQS SECTION */
+	ul{
+		width: 45rem;
+	}
+
+	/* FOOTER */
+	.footer{
+		padding: 3rem 0 1rem 6rem; 
+	}
+
+}
+
+/* ESCRITORIO PEQUEÑO O TABLET VERTICAL | 768px */
+@media (max-width: 991px) and (min-width: 768px){
+
+
+}
+
+/* MOVIL | 320px */
+@media (max-width: 767px){
+
+	
+}
